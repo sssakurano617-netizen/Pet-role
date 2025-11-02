@@ -2,10 +2,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // ⬇︎ これを追加（ESLintエラーでビルドを止めない）
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // ← これがポイント（ビルド中にESLintで止めない）
   },
 };
 
 export default nextConfig;
+
